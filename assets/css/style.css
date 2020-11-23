@@ -1,0 +1,44 @@
+.center {
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+#menu li{
+    display: inline;
+    padding: 15px;
+}
+#menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+#menu li a:hover{
+    color: gray;
+}
+.p-30{
+    padding: 30px;
+}
+.br-50{
+    border-radius: 50%;
+}
+.wh-360{
+    width: 360px;
+    height: 360px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.tm-social{
+    width: 30px;
+    height: 30px;
+}
+.ml-50{
+    margin-left: 50px;
+}

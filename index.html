@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Minha Pagina</title>
+</head>
+<body>
+    <!--ul é a tag de lista neste caso é a lista de um menu(fazer o agrupamento do menu)-->
+    <ul id="menu">
+        <!--li é a tag de fazer uma marcação no item da lista
+                a é a tag para transformar algo em link-->
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="contato.html">Contato</a>
+        </li>
+    </ul>
+    <!--O h1 é o "titulo" principal da pagina
+        seguida pelos subtitulos que podem ser
+        algo entre h2 até o h6-->
+    <h1 class="center">Monica Ribeiro</h1>
+    <!--p é o paragrafo (local para fazer a escrita!)-->
+    <div class="container">
+        <div>
+            <!--O img é para inserir imagens-->
+            <img class="br-50 wh-360 p-30" src="assets/img/loverock.jpg" alt="Foto teste de uma serie de codigos">
+        </div>
+        <div class="p-30">
+            <p class="justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Harum suscipit obcaecati sequi libero amet ullam. Nobis quidem libero, 
+                distinctio doloribus tenetur quis quam et. Quisquam quae sunt doloribus facilis unde.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Harum suscipit obcaecati sequi libero amet ullam. Nobis quidem libero, 
+                distinctio doloribus tenetur quis quam et. Quisquam quae sunt doloribus facilis unde.
+            </p>
+            <p class="p-30"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Harum suscipit obcaecati sequi libero amet ullam. Nobis quidem libero, 
+                distinctio doloribus tenetur quis quam et. Quisquam quae sunt doloribus facilis unde.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Harum suscipit obcaecati sequi libero amet ullam. Nobis quidem libero, 
+                distinctio doloribus tenetur quis quam et. Quisquam quae sunt doloribus facilis unde.
+            </p>
+        </div>
+    </div>
+    <h2 class="center">Teste de iframe!</h2>
+    <!--iframe serve para ter um "link externo" para exibir algo de outra pagina
+    como por exemplo este esta exibindo um video do YT, width é a largura e height é
+    a altura, src é a inserção no caso da onde oque ira puxar, frameborder é a borda
+    e conforme muda o numero muda a borda, allow é oque o usuario podera fazer exemplos:
+    accelerometer opção de acelerar o video, autoplay para começar automaticamente e tem
+    uma encriptação de midia-->
+    <div class="container mb-50">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VqoyKzgkqR4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.facebook.com" target="_blank">
+                <img class="tm-social p-30" src="assets/img/facebook.png" alt="Logo do facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img class="tm-social p-30" src="assets/img/instagram.png" alt="Logo do instagram">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do linkedin">
+            </a>
+        </div>
+        <p class="center">
+            Todos os direitos reservados: Monica Ribeiro&copy;
+        </p>
+    </footer>
+</body>
+</html>
