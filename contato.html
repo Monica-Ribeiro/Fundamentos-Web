@@ -21,18 +21,21 @@
             <h2>Envie uma mensagem!:</h2>
             <form>
                 <label for="nome">Nome:</label> <br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onKeyUp="validaNome()">
+                <div id ='txtNome'></div>
+                
                 <br>
                 <label for="email">Email:</label> <br>
-                <input type="email" id="email">
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id ='txtEmail'></div>
                 <br>
                 <br>
                 <label for="assunto">Assunto:</label> <br>
-                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup=" validaAssunto()"></textarea>
+                <div id ='txtAssunto'></div>
+                
                 <br>
-                <br>
-                <button> Enviar!</button>
+                <button onclick="enviar()"> Enviar!</button>
             </form>
         </div>
         <div class="ml-50">
@@ -41,7 +44,7 @@
     <p>São Paulo - SP</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0980322469036!2d-46.654126285022166!3d-23.56492238468107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1605896018946!5m2!1spt-BR!2sbr"
     width="600" height="450" frameborder="0" style="border:0;"
-    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    allowfullscreen="" aria-hidden="false" tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
         </div>
 </div>
 <hr>
@@ -61,5 +64,8 @@
             Todos os direitos reservados: Monica Ribeiro&copy;
         </p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
